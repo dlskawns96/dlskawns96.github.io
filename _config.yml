@@ -99,7 +99,7 @@ analytics:
 # Site Author
 author:
   name: "NAMJUN LEE" # 블로그 닉네임
-  avatar: "/assets/images/IMG_9454.png" # 블로그 프로필 사진
+  avatar: "https://github.com/user-attachments/assets/3ad2fad7-c94d-4c3d-8752-1f47287cfa2e" # 블로그 프로필 사진
   #   bio              : "hi all!"
   # location         : "Seoul, Korea"
   # email            : "youremailhere@xxxxxx.com"
