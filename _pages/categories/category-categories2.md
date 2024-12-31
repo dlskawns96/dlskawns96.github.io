@@ -1,9 +1,9 @@
 ---
-title: "Categories2"
+title: "iOS"
 layout: category
-permalink: /categories/categories2/
+permalink: /categories/iOS/
 author_profile: true
-taxonomy: Categories2
+taxonomy: iOS
 sidebar:
   nav: "categories"
 ---

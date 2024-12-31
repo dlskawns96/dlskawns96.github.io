@@ -1,9 +1,9 @@
 ---
-title: "Categories1"
+title: "Personal"
 layout: category
-permalink: /categories/categories1/
+permalink: /categories/Personal/
 author_profile: true
-taxonomy: Categories1
+taxonomy: Personal
 sidebar:
   nav: "categories"
 ---
