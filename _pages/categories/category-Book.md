@@ -1,9 +1,9 @@
 ---
-title: "Other"
+title: "Book"
 layout: category
-permalink: /categories/Other/
+permalink: /categories/Book/
 author_profile: true
-taxonomy: Other
+taxonomy: Book
 sidebar:
   nav: "categories"
 ---
