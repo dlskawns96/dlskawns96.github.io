@@ -1,6 +1,6 @@
 ---
 title: "[서울이 아니라면 나는 무엇을 할 수 있을까] 서울 밖에서의 가능성"
-excerpt: 2025-01 정리
+excerpt: 독후감
 categories:
   - Book
 permalink: /Book/2025-01-01-OutsideOfSeoul/
