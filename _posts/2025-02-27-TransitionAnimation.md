@@ -2,8 +2,8 @@
 title: Swift CABasicAnimation으로 움직이는 Masking + Gradient Border 애니메이션 구현하기
 excerpt: Swift CALayer 애니메이션
 categories:
-  - Personal
-permalink: /Personal/2025-02-27-TransitionAnimation/
+  - iOS
+permalink: /iOS/2025-02-27-TransitionAnimation/
 toc: true
 toc_sticky: true
 date: 2025-02-27
@@ -90,7 +90,12 @@ if let _ = self.layer.sublayers?.first(where: { $0.name == "GradientBorder" }) {
 이걸 해결하기 위해서 위의 StackOverflow 글에서 제시한 방법과 다르게 아래처럼 해결한다
 
 ```Swift
-private func addGradientBorderWithAnimation(to rect: CGRect, cornerRadius: CGFloat, colors: [UIColor], commonBeginTime: CFTimeInterval) {
+private func addGradientBorderWithAnimation(
+to rect: CGRect,
+cornerRadius: CGFloat,
+colors: [UIColor],
+commonBeginTime: CFTimeInterval
+) {
 	if let _ = self.layer.sublayers?.first(where: { $0.name == "GradientBorder" }) {
 		let pathAnimation = CABasicAnimation(keyPath: "path")
 		pathAnimation.fromValue = self.createRoundedRectPath(rect: self.shape.path!.boundingBox, cornerRadius: cornerRadius)
