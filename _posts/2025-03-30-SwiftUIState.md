@@ -15,7 +15,7 @@ last_modified_at: 2025-03-30
 
 # State
 
-<img width="668" alt="Image" src="https://github.com/user-attachments/assets/6fc0e3d5-154e-444d-8808-1b38f3419c28"/>
+![]("https://github.com/user-attachments/assets/9198b3f8-43fd-4885-8965-25252f7b2303")
 
 > SwiftUI가 관리하는 Property Wrapper
 
