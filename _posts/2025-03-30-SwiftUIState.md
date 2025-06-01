@@ -9,7 +9,6 @@ toc_sticky: true
 date: 2025-03-30
 last_modified_at: 2025-03-30
 ---
-최근에 기존 프로젝트에 컴포넌트들을 SwiftUI로 만들어서 부분적으로 도입하려는 중이다
 
 기존 프로젝트는 RxSwift로 데이터 바인딩 처리를 했는데, SwiftUI로 만들어진 View 들은 프로퍼티 래퍼(@State, @StateObject, @ObservedObject)을 통해서 데이터 바인딩을 해보려한다
 
