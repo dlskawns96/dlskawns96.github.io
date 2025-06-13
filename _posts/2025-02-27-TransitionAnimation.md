@@ -33,7 +33,7 @@ last_modified_at: 2025-02-27
 
 두번째 문제를 해결한 방법은 다음과 같다
 
-```Swift
+```swift
 let commonBeginTime = animationLayer.convertTime(CACurrentMediaTime(), from: nil)
 
 let animation1 = CABasicAnimation()
@@ -56,7 +56,7 @@ animationLayer.add(animation2, forKey: "animation2")
 세번째 문제는 검색해봐도 예제가 거의 보이지 않고 원인을 파악하기 어려워서 가장 해결하기 어려웠다
 
 우선 border animation은 다음과 같이 구현했다:
-```Swift
+```swift
 // CABasicAnimation 은 frame 의 변경을 지원하지 않기 때문에
 // position, bounds 애니메이션을 각각 만들고 group 화
 if let _ = self.layer.sublayers?.first(where: { $0.name == "GradientBorder" }) {
@@ -89,7 +89,7 @@ if let _ = self.layer.sublayers?.first(where: { $0.name == "GradientBorder" }) {
 
 이걸 해결하기 위해서 위의 StackOverflow 글에서 제시한 방법과 다르게 아래처럼 해결한다
 
-```Swift
+```swift
 private func addGradientBorderWithAnimation(
 to rect: CGRect,
 cornerRadius: CGFloat,
@@ -135,7 +135,7 @@ commonBeginTime: CFTimeInterval
 
 코드가 정리가 안되어 좀 복잡해서 대략적으로 설명하자면
 1. 영역을 표시할 사각형을 UIBezierPath를 이용해 그리는게 아니라 아래의 함수로 사각형을 직접 그려줌
-```Swift
+```swift
 private func createRoundedRectPath(rect: CGRect, cornerRadius: CGFloat) -> CGPath {
 	let path = UIBezierPath()
 	let minRadius = min(rect.width, rect.height) / 2
