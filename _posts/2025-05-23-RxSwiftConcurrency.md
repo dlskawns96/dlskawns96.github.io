@@ -19,7 +19,7 @@ last_modified_at: 2025-05-23
 
 ViewController는 어떤 ViewController를 만들어서 push 할지 알 필요 없이 전달되는 ViewController를 열기만 하면 돼서 코드가 간결해지는 장점이 있다
 
-```Swift
+```swift
 @MainActor
 private func makeViewController() -> UIViewController {
 	return UIViewController()
@@ -48,7 +48,7 @@ output.pushViewController
 대략 MainActor 함수인 `makeViewController()`가 메인 엑터 컨텍스트가 아닌 곳에서 호출되는게 문제라는 얘기다
 
 이 에러를 해결 하기 위해서 ViewModel의 코드를 아래처럼 수정해보려고 했다
-```Swift
+```swift
 input.openButtonDidTap
 	.bind { [weak self] in
 		Task { @MainActor in
@@ -64,7 +64,7 @@ input.openButtonDidTap
 
 이런 문제들을 대응하기 위해서 RxSwift 6.5.0 에서 [Swift Concurrency 대응](https://github.com/ReactiveX/RxSwift/blob/main/Documentation/SwiftConcurrency.md)이 추가되었다
 
-```Swift
+```swift
 let someEvents = PublishRelay<Void>()
 
 // 1. 기존
@@ -83,7 +83,7 @@ Task { [weak self] in
 ```
 이런 식으로 RxSwift 스럽게 스트림을 구독하는 코드를 `AsyncStream`인 .values에 접근하여 await을 사용하여 처리할 수 있도록 되었다
 
-```Swift
+```swift
 Task { [weak self] in
 	for try await _ in input.imageSearchButtonDidTap.values {
 		self?.output.pushViewController.accept(self?.makeViewController())
