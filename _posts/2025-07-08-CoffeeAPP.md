@@ -1,6 +1,6 @@
 ---
-title: RxSwift에서 Swift 6 Concurrency 대응하기
-excerpt: RxSwift에서 Swift 6 Concurrency 대응하기
+title: SwiftUI로 만든 나만의 커피 기록 앱
+excerpt: 커피 브루잉 레시피를 기록하고 추출까지 도와주는 앱 개발기
 categories:
   - iOS
 permalink: /iOS/2025-07-08-CoffeeAPP/
