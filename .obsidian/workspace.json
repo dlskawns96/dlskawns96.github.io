@@ -53,12 +53,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2025-02-27-TransitionAnimation.md",
+                "file": "_posts/2025-07-08-CoffeeAPP.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-02-27-TransitionAnimation"
+              "title": "2025-07-08-CoffeeAPP"
             }
           }
         ],
@@ -204,14 +204,15 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "59daf1b9edd0f2a6",
+  "active": "61281767c9a0f7bf",
   "lastOpenFiles": [
     "_posts/2025-05-23-RxSwiftConcurrency.md",
+    "_posts/2025-07-08-CoffeeAPP.md",
+    "_posts/2025-02-27-TransitionAnimation.md",
     "_posts/2025-03-30-SwiftUIState.md",
     "_site/iOS/2025-05-23-RxSwiftConcurrency/index.html",
     "_site/iOS/2025-05-23-RxSwiftConcurrency",
     "_posts/2024-12-31-2024-recap.md",
-    "_posts/2025-02-27-TransitionAnimation.md",
     "_sass/minimal-mistakes/syntax_gruvbox.dark.scss",
     "_site/iOS/2025-03-30-SwiftUIState/index.html",
     "_site/iOS/2025-02-27-TransitionAnimation/index.html",
