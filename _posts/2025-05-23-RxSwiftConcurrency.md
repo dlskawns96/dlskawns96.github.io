@@ -43,9 +43,9 @@ output.pushViewController
 	.disposed(by: self.disposedBag)
 ```
 
-이 흐름을 코드로 나타내면 위와 같은데, 기존에는 `input.openButtonDidTap.map { }` 안에서 MainActor 함수를 호출해도 문제 없었으나 프로젝트의 Swift 버전을 6.0으로 올리면서 이런 에러가 발생한다
-![](https://i.imgur.com/fDpIxh7.png)
-대략 MainActor 함수인 `makeViewController()`가 메인 엑터 컨텍스트가 아닌 곳에서 호출되는게 문제라는 얘기다
+이 흐름을 코드로 나타내면 위와 같은데, 기존에는 `input.openButtonDidTap.map { }` 안에서 MainActor 함수를 호출해도 문제 없었으나 프로젝트의 Swift 버전을 6.0으로 올리면서 컴파일 오류가 발생한다.
+
+> MainActor 함수인 `makeViewController()`가 메인 액터 컨텍스트가 아닌 곳에서 호출되는 것이 문제라는 내용이다.
 
 이 에러를 해결 하기 위해서 ViewModel의 코드를 아래처럼 수정해보려고 했다
 ```swift

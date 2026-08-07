@@ -1,7 +1,7 @@
 # main links
 main:
-  - title: "Home"
-    url: https://dlskawns96.github.io/
+  - title: "홈"
+    url: /
 
 #  - title: "About"
 #    url: /about/

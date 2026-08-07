@@ -4,21 +4,21 @@
 
 /* Colors */
 $background-color: #ffffff !default;
-$text-color: rgb(7, 7, 7) !default;
-$primary-color: #FF6C02 !default;
+$text-color: #222522 !default;
+$primary-color: #496b61 !default;
 
-$border-color: mix(#fff, $background-color, 20%) !default;
-$code-background-color:rgba(240, 240, 240, 0.5);
-$code-background-color-dark: rgba(185, 185, 185, 0.25) !default;
+$border-color: #e7e9e7 !default;
+$code-background-color: #f6f7f6;
+$code-background-color-dark: #f0f2f0 !default;
 
 $mark-highlight-color: rgba($primary-color, 0.15) !default;
 $block-quote-background-color: rgba($primary-color, 0.1) !default;
-$form-background-color: rgba(255, 255, 255, 0.527) !default;
-$footer-background-color: mix(#000, $background-color, 3%) !default;
+$form-background-color: #ffffff !default;
+$footer-background-color: #f7f8f7 !default;
 $link-color: $primary-color !default;
 
-$link-color-hover: mix($primary-color, $background-color, 70%) !default;
-$link-color-visited: mix($link-color, rgb(3, 3, 3), 98%) !default;
+$link-color-hover: #315149 !default;
+$link-color-visited: #496b61 !default;
 
 $masthead-link-color: $text-color !default;
 $masthead-link-color-hover: mix(#000, $text-color, 70%) !default;
@@ -60,15 +60,15 @@ $base0f: #cc6633 !default;
 .page__content {
   a,
   a:visited {
-    color: inherit;
+    color: $link-color;
   }
 }
 
 /* next/previous buttons */
 .pagination--pager {
-  color: $text-color;
-  background-color: rgba($primary-color, 0.8);
-  border-color: transparent;
+  color: #616761;
+  background-color: transparent;
+  border-color: $border-color;
 
   &:visited {
     color: $text-color;

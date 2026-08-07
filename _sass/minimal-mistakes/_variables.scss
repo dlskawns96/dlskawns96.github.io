@@ -6,7 +6,7 @@
    Typography
    ========================================================================== */
 
-$doc-font-size: 16 !default;
+$doc-font-size: 17 !default;
 
 /* paragraph indention */
 $paragraph-indent: false !default; // true, false (default)
@@ -15,14 +15,14 @@ $indent-var: 0.7lem !default;
 /* system typefaces */
 $serif: Georgia, Times, serif !default;
 /* 2022.01.19 font change */
-$sans-serif: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', "Montserrat", "Pretendard", "Merriweather", sans-serif !default;
-$monospace: "Fira Mono", "Pretendard", Monaco, Consolas, "Lucida Console", monospace !default;
+$sans-serif: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif !default;
+$monospace: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace !default;
 
 
 /* sans serif typefaces */
 $sans-serif-narrow: $sans-serif !default;
 $helvetica: Helvetica, "Helvetica Neue", Arial, sans-serif !default;
-$menufont: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', "Montserrat", "BioRhyme", "Pretendard", sans-serif !default;
+$menufont: $sans-serif !default;
 
 
 /* serif typefaces */
@@ -151,21 +151,21 @@ $small: 600px !default;
 $medium: 768px !default;
 $medium-wide: 900px !default;
 $large: 1024px !default;
-$x-large: 1500px !default;
-$max-width: $x-large !default;
+$x-large: 1280px !default;
+$max-width: 1180px !default;
 
 /*
    Grid
    ========================================================================== */
 
-$left-sidebar-width-narrow: 240px !default;
-$left-sidebar-width: 280px !default;
-$left-sidebar-width-wide: 400px !default;
+$left-sidebar-width-narrow: 190px !default;
+$left-sidebar-width: 210px !default;
+$left-sidebar-width-wide: 210px !default;
 
 /* changed right sidebar width 200 -> 240, 250 -> 280 */
-$right-sidebar-width-narrow: 240px !default;
-$right-sidebar-width: 280px !default;
-$right-sidebar-width-wide: 400px !default;
+$right-sidebar-width-narrow: 210px !default;
+$right-sidebar-width: 230px !default;
+$right-sidebar-width-wide: 230px !default;
 
 /*
    Other
